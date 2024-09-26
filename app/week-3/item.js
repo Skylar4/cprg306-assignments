@@ -1,4 +1,4 @@
-
+import Input from "postcss/lib/input"
 export default function Item({aitem}){
     let{ name: itemname,
         quantity: itemquantity,
@@ -9,6 +9,7 @@ export default function Item({aitem}){
             <h1><b>{itemname}</b></h1>
             <p>qunitity: {itemquantity}</p>
             <p>category: {itemcategory}</p>
+            <input type="checkbox" />
         </div>
     )
 }

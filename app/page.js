@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  let linkStyles = "underline-cyan-300 hover:underline   "
+  let linkStyles = " hover:underline   "
   return (
     <main>
       <h1>CPRG 306: Web Development 2 - Assignments</h1>
