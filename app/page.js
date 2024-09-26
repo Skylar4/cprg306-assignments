@@ -13,6 +13,9 @@ export default function Home() {
       <li>
       <Link href="./week-3/" className={linkStyles}>week 3 - assignment</Link>
       </li>
+      <li>
+      <Link href="./week-4/" className={linkStyles}>week 4 - assignment</Link>
+      </li>
       </ul>
 
     </main>
