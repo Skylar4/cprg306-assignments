@@ -57,7 +57,7 @@ export default function NewItem({addNewItemFunc}){
         minusbutton = "p-3 bg-slate-500 m-2 rounded w-20"
     }
     return(
-        <main className="bg-stone-500 w-72 h-auto flex-col  rounded ">
+        <main className=" bg-blue-950 w-72 h-auto flex-col rounded-xl border-violet-300 border-2 ">
             <form onSubmit = {handleSubmit} className="flex flex-col w-full items-center">
                 <input 
                 type= "text" 
@@ -65,13 +65,13 @@ export default function NewItem({addNewItemFunc}){
                 value={name} 
                 placeholder = "Enter Item name" 
                 style={{color: 'black'}}
-                className="p-3 w-64 text-center mt-4 rounded"
+                className="p-3 w-64 text-center mt-4 rounded-xl"
                 required ></input>
 
                 <select 
                 style={{color: 'black'}} 
                 value ={category}
-                className = "p-3 mt-4 mb-4 rounded w-64" 
+                className = "p-3 mt-4 mb-4 rounded-xl w-64" 
                 onChange={handlecategorychange}>
                     <option>Produce</option>
                     <option>Dairy</option>
@@ -88,13 +88,13 @@ export default function NewItem({addNewItemFunc}){
 
 
             
-            <div className=" flex flex-row items-center justify-center bg-black w-full ">
+            <div className=" flex flex-row items-center justify-center  bg-blue-950 w-full ">
 
             <button onClick={incrementQuantity} className={plusbutton} type= "button" >+</button>
             <button onClick={decrementQuantity} className={minusbutton} type="button">-</button>
             <p className="text-4xl ml-2">{quantity}</p>
             </div>
-            <button className="w-full h-10 rounded hover:bg-green-400" type="submit" value="submit" >
+            <button className="w-full h-10 rounded-xl hover:bg-green-400" type="submit" value="submit" >
                 Add
             </button>
             </form>
